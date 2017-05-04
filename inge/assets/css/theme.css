@@ -1,0 +1,80 @@
+/* --------------------------------------
+=========================================
+COLOR : BLUE 
+
+MAIN COLOR CODE: #008ed6
+
+DEEP COLOR CODE: #005885
+=========================================
+----------------------------------------- */
+
+.color-overlay {
+    background: url(../images/noise.png);
+    background-color: rgba(149,118,90, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+header .color-overlay .tease-img {
+    position: absolute;
+    opacity: 0.9;
+    width: 100%;
+    z-index: -1;
+    height: auto;
+    left: 0;
+}
+
+.standard-button {
+    background: rgba(255,255,255,0.0);
+    border-radius: 0px;
+
+}
+
+.standard-button2 {
+    background: #f2cf66;
+}
+
+.standard-button2:hover {
+    background: #F2CF66;
+}
+
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+    background: #005885;
+    border-color: inherit;
+}
+
+.colored-line,
+.colored-line-left {
+    background: #f2cf66;
+}
+
+.main-color {
+    color: #f2cf66;
+}
+
+.color-bg {
+	background: #008ed6;
+	color: #FFFFFF;
+}
+
+.gallery {
+  column-count: 3;
+  column-gap: 1.5em;
+}
+
+.gallery .copyright {
+  color: #999;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 1.8em;
+}

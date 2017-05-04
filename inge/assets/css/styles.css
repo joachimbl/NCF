@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+/* --------------------------------------
+=========================================
+GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #232323;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+a {
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn:active {
+    outline: inherit;
+}
+
+textarea:focus, input:focus {
+    color: #ffffff;
+}
+/* Other fixes*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding-left: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* PRE LOADER */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -20px 0 0 -20px;
+}
+
+
+/*---------------------------------------
+   Typography                
+-----------------------------------------*/
+
+
+/* HEADINGS */
+
+h1,
+h2 {
+    font-family: 'Slabo 27px', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.75rem;
+    line-height: 4.688rem;
+}
+
+h2 {
+    font-size: 3.125rem;
+    line-height: 4.063rem;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*---------------------------------------
+   CUSTOM BUTTON              
+-----------------------------------------*/
+
+.standard-button,
+.standard-button2 {
+    font-size: 18px;
+    font-weight: 400 !important;
+    border-radius: 4px !important;
+    text-shadow: 0 !important;
+    color: #ffffff;
+    min-width: 150px;
+    border: none;
+    padding: 16px 25px 16px 25px;
+    margin: 5px;
+    -webkit-transition: all ease 0.25s;
+            transition: all ease 0.25s;
+}
+
+.standard-button:hover,
+.standard-button2:hover {
+    border: none;
+}
+
+.standard-button i,
+.standard-button2 i {
+    vertical-align: inherit;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+
+/*---------------------------------------
+   TEXTS AND BG               
+-----------------------------------------*/
+
+.white-text {
+    color: #ffffff;
+}
+
+.dark-text {
+    color: #272727;
+}
+
+.deep-dark-bg {
+    background: #3f3832 !important;
+}
+
+.deep-dark-bg a {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+
+/*---------------------------------------
+   SECTIONS          
+-----------------------------------------*/
+
+.section-header {
+    padding-bottom: 78px;
+}
+
+.section-header h2 {
+    margin-bottom: 20px;
+}
+
+.section-header .section-description {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*---------------------------------------
+   Footer       
+-----------------------------------------*/
+
+.footer{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+/*---------------------------------------
+   LINES          
+-----------------------------------------*/
+
+.colored-line {
+    margin: auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+}
+
+.white-line {
+    margin: auto;
+    z-index: 1;
+    width: 165px;
+    height: 1px;
+    background: #ffffff;
+}
+
+.colored-line-left {
+    float: left;
+    z-index: 1;
+    display: block;
+    width: 165px;
+    height: 1px;
+}
+
+/*---------------------------------------
+=========================================
+ **   SECTION STYLES                
+=========================================
+-----------------------------------------*/
+
+/*---------------------------------------
+   SECTION:  HOME                 
+-----------------------------------------*/
+
+header .color-overlay {
+    min-height: 724px;
+}
+
+header .full-screen {
+    width: 100%;
+    height: 100px;
+}
+
+/* TOP BAR WITH NAVIGATION */
+
+
+.navbar-default {
+    border-color: rgba(35,35,35,.05);
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: rgba(0,0,0,0.8);
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.navbar-header > .navbar-brand {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    color: #623c63;
+    padding: 15px;
+    -webkit-transition: padding .2s ease-in;
+    -moz-transition: padding .2s ease-in;
+    transition: padding .2s ease-in;
+}
+
+.navbar-header > .navbar-brand:hover,
+.navbar-header > .navbar-brand:focus {
+    color: #f2cf66;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #181818;
+}
+.navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #eee;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #f2cf66;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #f2cf66 !important;
+    background-color: transparent;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover
+{
+    background-color: transparent;
+}
+
+@media(min-width:870px) {
+.navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,0.8);
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: transparent;
+        background-color: transparent;
+        min-height: 60px;
+    }
+
+    .navbar-header > .navbar-brand {
+        color: rgba(255,255,255,0.7);
+        padding: 19px;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #f4f4f4;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,0.8);
+        padding: 20px 6px;
+        font-size: 11px;
+        letter-spacing: 1.1px;
+        text-shadow: 1px 1px 1px rgba(60,60,60,0.5);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fefefe;
+    }
+
+    .navbar-default.affix {
+        border-color: rgba(34,34,34,.05);
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 15px;
+        color: #f2cf66;
+        padding: 20px;
+        letter-spacing: 1px;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #8b27b0;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #ddd;
+        text-shadow: 1px 1px 1px rgba(30,30,30,0.7);
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #f2cf66;
+    }
+}
+
+
+/* INTRO */
+
+header .intro-section {
+    margin: auto;
+    padding-top: 28%;
+}
+
+header .intro-section .intro {
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+header .intro-section h5 {
+    color: #fff;
+}
+
+header .intro-section .buttons {
+    margin-top: 35px;
+}
+
+/*---------------------------------------
+   SECTION:  Inge Lehmann                
+-----------------------------------------*/
+
+.inge-section {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background: url(../images/noise.png);
+    background-color: #D0BA95;
+    position: relative;
+}
+
+
+.inge-section img {
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    position: relative;
+    width: 100%;
+}
+
+.inge-section:before {
+    content: " ";
+    width: 100%;
+    background: url(../images/overgang.png);
+    background-size: 61px 184px;
+    position: absolute;
+    height: 184px;
+    top: -184px;
+    left: 0;
+    background-position: bottom;
+    z-index: 100;
+}
+
+
+
+/*---------------------------------------
+   SECTION:  Science               
+-----------------------------------------*/
+
+.science-section {
+    padding-top: 80px;
+    /*background: url(../images/noise.png);*/
+    background-color: #15486a;
+    position: relative;
+}
+
+.science-section .row {
+    padding-bottom: 70px;
+}
+
+.science-section img {
+    width: 100%;
+}
+
+
+
+/*---------------------------------------
+   SECTION:  quote               
+-----------------------------------------*/
+
+.quote-section .color-overlay {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+
+/*---------------------------------------
+   SECTION:  Monument 
+-----------------------------------------*/
+
+.monument-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+    background: url(../images/noise2.png);
+    background-color: #fff;
+    position: relative;
+    color: #222; 
+}
+
+
+.monument-section img {
+    width: 100%;
+}
+
+
+.monument-section blockquote {
+    margin-top: 40px;
+}
+
+.monument-section .colored-line, .monument-section .colored-line-left {
+    background: #d9564a;
+}
+
+.monument-section .row {
+    padding-bottom: 70px;
+}
+
+.monument-section .video {
+    margin: 0px 40px 50px 0px;
+}
+
+/*---------------------------------------
+   SECTION:  INGE                 
+-----------------------------------------*/
+
+.video-section {
+    padding-top: 110px;
+    padding-bottom: 60px;
+    background: #f2cf66;
+}
+
+.video-section h2 {
+    margin-bottom: 20px;
+}
+
+.video-section .left-align {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.video-section .left-align p {
+    display: block;
+    float: none;
+    margin-top: 50px;
+}
+
+.video-section .left-align .feature-list {
+    margin-top: 40px;
+}
+
+.video-section .left-align .feature-list li {
+    margin-bottom: 26px;
+}
+
+.video-section .left-align .feature-list li i {
+    margin-right: 10px;
+    vertical-align: inherit;
+}
+
+
+/* VIDEO */
+
+video {
+    height: auto;
+}
+
+iframe,
+embed,
+object {
+    max-width: 100%;
+}
+
+.video-container {
+    width: 90%;
+    background: transparent !important;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 40px; 
+}
+
+.video {
+    background: transparent !important;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.scrolloff {
+    pointer-events: none;
+}
