@@ -110,7 +110,7 @@ wow.init();
 
     $('body').scrollspy({
         target: '.navbar-fixed-top',
-        offset: 60
+        offset: 61
     });
 
     $('#topNav').affix({
@@ -124,7 +124,7 @@ wow.init();
     $('a.page-scroll').bind('click', function(event) {
         var $ele = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($ele.attr('href')).offset().top - 60)
+            scrollTop: ($($ele.attr('href')).offset().top - 61)
         }, 1450, 'easeInOutExpo');
         event.preventDefault();
     });

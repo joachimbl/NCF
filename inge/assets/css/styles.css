@@ -307,6 +307,7 @@ header .full-screen {
     font-size: 12px;
     font-weight: 700;
     color: #eee;
+    padding: 20px 6px;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -355,8 +356,8 @@ header .full-screen {
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
         color: rgba(255,255,255,0.8);
-        padding: 20px 6px;
-        font-size: 11px;
+        padding: 20px 10px;
+        font-size: 12px;
         letter-spacing: 1.1px;
         text-shadow: 1px 1px 1px rgba(60,60,60,0.5);
     }
