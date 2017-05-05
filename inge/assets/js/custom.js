@@ -138,18 +138,6 @@ wow.init();
 
 
 /* =================================
-===  Nivo Lightbox              ====
-=================================== */
-$(document).ready(function () {
-
-    $('#screenshots a').nivoLightbox({
-        effect: 'fadeScale',
-    });
-
-});
-
-
-/* =================================
 ===  EXPAND COLLAPSE            ====
 =================================== */
 $('.expand-form').simpleexpand({

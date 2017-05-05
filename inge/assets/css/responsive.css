@@ -15,24 +15,11 @@ RESPONSIVE FIXES
 
 @media (max-width: 640px) {
     
-    header {
-    background: url('http://templateocean.com/premium/template/kane/files/images/bg-1.jpg') no-repeat center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    .color-overlay {
+    background: url('../images/bg.jpg') no-repeat center;
+    background-size: cover;
     }
     
-    .testimonials {
-    background: url('http://templateocean.com/premium/template/kane/files/images/bg-2.jpg') no-repeat center;
-    -webkit-background-size: cover;
-            background-size: cover;
-    }
-    
-    .download {
-    background: url('http://templateocean.com/premium/template/kane/files/images/bg-3.jpg') no-repeat center;
-    -webkit-background-size: cover;
-            background-size: cover;
-    
-    }
     
 } 
  
@@ -73,11 +60,11 @@ RESPONSIVE FIXES
     }
 
     header .color-overlay {
-        min-height: 750px;
+        min-height: 634px;
     }
 
     header .intro-section {
-        padding-top: 25%;
+        padding-top: 36%;
     }
 
     .features .features-left,
@@ -157,8 +144,10 @@ RESPONSIVE FIXES
     }
 
     .gallery {
-      column-count: 2;
-      column-gap: 1.5em;
+      -moz-column-count: 2;
+           column-count: 2;
+      -moz-column-gap: 1.5em;
+           column-gap: 1.5em;
     }
 
     .inge-section, .monument-section, .science-section, .elisabeth-section, .quote-section .color-overlay {
@@ -171,7 +160,8 @@ RESPONSIVE FIXES
 
     .tease-img {
         bottom: 0;
-        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
     }
  
     
@@ -180,7 +170,7 @@ RESPONSIVE FIXES
     }
 
     header .color-overlay {
-        min-height: 480px;
+        min-height: 385px;
     }
 
     header .intro-section {
@@ -213,8 +203,6 @@ RESPONSIVE FIXES
 
     .features .feature:hover .icon-container .icon, 
     footer .contact-button:hover {
-        -webkit-background-clip: padding-box;
-        -moz-background-clip: padding;
         background-clip: padding-box;
     }
 

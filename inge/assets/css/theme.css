@@ -56,13 +56,15 @@ header .color-overlay .tease-img {
 }
 
 .color-bg {
-	background: #008ed6;
-	color: #FFFFFF;
+    background: #008ed6;
+    color: #FFFFFF;
 }
 
 .gallery {
-  column-count: 3;
-  column-gap: 1.5em;
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-gap: 1.5em;
+       column-gap: 1.5em;
 }
 
 .gallery .copyright {

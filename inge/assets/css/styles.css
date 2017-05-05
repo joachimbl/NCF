@@ -37,17 +37,12 @@ body {
     width: device-width;
 }
 
-@-o-viewport {
-    width: device-width;
-}
-
 @viewport {
     width: device-width;
 }
 
 a {
-    -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
+    transition: all ease 0.25s;
 }
 
 a:hover {
@@ -67,9 +62,7 @@ textarea:focus, input:focus {
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul,
@@ -105,8 +98,7 @@ li {
     background-image: url(../images/loader.gif);
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     margin: -20px 0 0 -20px;
 }
 
@@ -166,8 +158,7 @@ h5 {
     border: none;
     padding: 16px 25px 16px 25px;
     margin: 5px;
-    -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
+    transition: all ease 0.25s;
 }
 
 .standard-button:hover,
@@ -288,8 +279,6 @@ header .full-screen {
     border-color: rgba(35,35,35,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: rgba(0,0,0,0.8);
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
     transition: all .4s;
 }
 
@@ -297,8 +286,6 @@ header .full-screen {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     color: #623c63;
     padding: 15px;
-    -webkit-transition: padding .2s ease-in;
-    -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
 }
 
@@ -444,11 +431,8 @@ header .intro-section .buttons {
 
 .inge-section img {
     border: 5px solid #fff;
-    -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     -ms-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
     transform: rotate(-2deg);
     position: relative;
     width: 100%;
