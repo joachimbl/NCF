@@ -141,6 +141,7 @@ h4 {
 h5 {
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.5;
 }
 
 /*---------------------------------------
@@ -425,6 +426,8 @@ header .full-screen {
 header .intro-section {
     margin: auto;
     padding-top: 28%;
+    z-index: 9999999;
+    position: relative;
 }
 
 header .intro-section .intro {
