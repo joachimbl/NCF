@@ -11,46 +11,52 @@ body {
   line-height: 1.5;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
   -webkit-backface-visibility: hidden;
+  color: #333;
 }
 
-/* line 23, ../compass/sass/style.scss */
+/* line 24, ../compass/sass/style.scss */
 a:active, a:visited, a:link, a:link, a:hover {
   text-decoration: none;
 }
 
-/* line 27, ../compass/sass/style.scss */
+/* line 28, ../compass/sass/style.scss */
 h1 {
   font-size: 34px;
 }
 
-/* line 31, ../compass/sass/style.scss */
+/* line 32, ../compass/sass/style.scss */
 h2 {
   font-size: 30px;
 }
-/* line 34, ../compass/sass/style.scss */
+/* line 35, ../compass/sass/style.scss */
 h2 span {
   font-size: 0.5em;
   display: inline;
 }
 
-/* line 41, ../compass/sass/style.scss */
+/* line 42, ../compass/sass/style.scss */
 h3 {
   font-size: 24px;
 }
 
-/* line 45, ../compass/sass/style.scss */
+/* line 46, ../compass/sass/style.scss */
 h4 {
   font-size: 18px !important;
   line-height: 1.6 !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 15px !important;
 }
 
-/* line 51, ../compass/sass/style.scss */
+/* line 52, ../compass/sass/style.scss */
+.lead {
+  margin-bottom: 30px !important;
+}
+
+/* line 56, ../compass/sass/style.scss */
 p {
   font-weight: 400;
 }
 
-/* line 55, ../compass/sass/style.scss */
+/* line 60, ../compass/sass/style.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Roboto", serif;
   font-weight: 300;
@@ -59,7 +65,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* line 63, ../compass/sass/style.scss */
+/* line 68, ../compass/sass/style.scss */
 h1 .point, h2 .point, h3 .point, h4 .point, h5 .point {
   position: absolute;
   background: #f1c40f;
@@ -73,7 +79,7 @@ h1 .point, h2 .point, h3 .point, h4 .point, h5 .point {
   border-radius: 50%;
   font-size: 22px;
 }
-/* line 76, ../compass/sass/style.scss */
+/* line 81, ../compass/sass/style.scss */
 h1 .point:after, h2 .point:after, h3 .point:after, h4 .point:after, h5 .point:after {
   content: "/ 12";
   /* Total amount of circles */
@@ -85,7 +91,7 @@ h1 .point:after, h2 .point:after, h3 .point:after, h4 .point:after, h5 .point:af
   color: #ccc;
 }
 
-/* line 88, ../compass/sass/style.scss */
+/* line 93, ../compass/sass/style.scss */
 h5 {
   font-weight: 400;
   color: #999;
@@ -97,14 +103,14 @@ h5 {
   padding-bottom: 10px;
 }
 
-/* line 100, ../compass/sass/style.scss */
+/* line 105, ../compass/sass/style.scss */
 .points h3 {
   font-weight: 400;
   padding-top: 50px;
   margin-top: -30px;
 }
 
-/* line 107, ../compass/sass/style.scss */
+/* line 112, ../compass/sass/style.scss */
 blockquote {
   font-style: italic;
   color: #666;
@@ -114,13 +120,20 @@ blockquote {
   font-weight: 300;
   font-family: "Roboto", serif;
 }
+/* line 121, ../compass/sass/style.scss */
+blockquote span {
+  font-style: normal;
+  font-size: 0.75em;
+  display: block;
+  font-weight: 400;
+}
 
-/* line 117, ../compass/sass/style.scss */
+/* line 129, ../compass/sass/style.scss */
 a:link, a:visited, a:focus, a:active {
   color: #3191AF;
 }
 
-/* line 121, ../compass/sass/style.scss */
+/* line 133, ../compass/sass/style.scss */
 .header {
   background-image: linear-gradient(0deg, #330867 0%, #30cfd0 100%);
   position: fixed;
@@ -131,41 +144,41 @@ a:link, a:visited, a:focus, a:active {
   z-index: 4;
   color: #fff;
 }
-/* line 131, ../compass/sass/style.scss */
+/* line 143, ../compass/sass/style.scss */
 .header .event-logo {
   font-family: "Roboto", serif;
   font-weight: 100;
   font-size: 20px;
   padding: 40px 15px 20px 25px;
 }
-/* line 137, ../compass/sass/style.scss */
+/* line 149, ../compass/sass/style.scss */
 .header .event-logo a:link, .header .event-logo a:visited, .header .event-logo a:focus, .header .event-logo a:active {
   color: #fff;
 }
-/* line 141, ../compass/sass/style.scss */
+/* line 153, ../compass/sass/style.scss */
 .header .event-logo strong {
   font-weight: 500;
 }
-/* line 145, ../compass/sass/style.scss */
+/* line 157, ../compass/sass/style.scss */
 .header .event-logo small {
   font-weight: 400;
   font-size: 13px;
   opacity: 1;
   display: block;
 }
-/* line 153, ../compass/sass/style.scss */
+/* line 165, ../compass/sass/style.scss */
 .header .main-nav {
   font-family: "Roboto", serif;
   -webkit-backface-visibility: hidden;
 }
-/* line 157, ../compass/sass/style.scss */
+/* line 169, ../compass/sass/style.scss */
 .header .main-nav ul {
   list-style: none;
   padding: 0px;
   margin: 0;
   -webkit-backface-visibility: hidden;
 }
-/* line 165, ../compass/sass/style.scss */
+/* line 177, ../compass/sass/style.scss */
 .header .main-nav ul li a {
   display: block;
   padding: 15px 20px 15px 25px;
@@ -175,17 +188,17 @@ a:link, a:visited, a:focus, a:active {
   font-size: 14px;
   -webkit-backface-visibility: hidden;
 }
-/* line 174, ../compass/sass/style.scss */
+/* line 186, ../compass/sass/style.scss */
 .header .main-nav ul li a.active {
   background: rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
-/* line 183, ../compass/sass/style.scss */
+/* line 195, ../compass/sass/style.scss */
 .header .header-wrap {
   position: relative;
   height: 100%;
 }
-/* line 187, ../compass/sass/style.scss */
+/* line 199, ../compass/sass/style.scss */
 .header .header-wrap .footer-links {
   -webkit-clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 100%);
   background: #f8f8f8;
@@ -195,24 +208,24 @@ a:link, a:visited, a:focus, a:active {
   left: 0;
   padding: 30px 15px 20px 25px;
 }
-/* line 196, ../compass/sass/style.scss */
+/* line 208, ../compass/sass/style.scss */
 .header .header-wrap .footer-links img:first-child {
   float: left;
   height: 40px;
 }
-/* line 201, ../compass/sass/style.scss */
+/* line 213, ../compass/sass/style.scss */
 .header .header-wrap .footer-links img:last-child {
   height: 40px;
   float: left;
   margin-left: 27px;
 }
 
-/* line 211, ../compass/sass/style.scss */
+/* line 223, ../compass/sass/style.scss */
 video {
   background: #eee;
 }
 
-/* line 215, ../compass/sass/style.scss */
+/* line 227, ../compass/sass/style.scss */
 .main-content {
   opacity: 1;
   min-height: 100%;
@@ -223,7 +236,7 @@ video {
   top: 0;
   left: 0;
 }
-/* line 227, ../compass/sass/style.scss */
+/* line 239, ../compass/sass/style.scss */
 .main-content .main-top .lead-image {
   max-height: 330px;
   overflow: hidden;
@@ -231,18 +244,21 @@ video {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
 }
-/* line 234, ../compass/sass/style.scss */
+/* line 246, ../compass/sass/style.scss */
 .main-content .main-top .lead-image img {
   width: 100%;
 }
-/* line 240, ../compass/sass/style.scss */
+/* line 252, ../compass/sass/style.scss */
 .main-content .main-top .secondary {
   width: 76px;
   position: absolute;
   left: 44%;
   top: 276px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-/* line 247, ../compass/sass/style.scss */
+/* line 262, ../compass/sass/style.scss */
 .main-content .main-top .copyright {
   width: 500px;
   margin: 6px auto 0;
@@ -250,49 +266,48 @@ video {
   text-align: left;
   font-family: "Roboto", serif;
 }
-/* line 255, ../compass/sass/style.scss */
+/* line 270, ../compass/sass/style.scss */
 .main-content .main-top .map-image {
   background: #eee;
   text-align: center;
   padding: 30px;
   position: relative;
 }
-/* line 260, ../compass/sass/style.scss */
+/* line 275, ../compass/sass/style.scss */
 .main-content .main-top .map-image img {
   max-width: 400px;
 }
-/* line 266, ../compass/sass/style.scss */
+/* line 281, ../compass/sass/style.scss */
 .main-content .main-body {
   max-width: 500px;
   margin: 50px auto;
   font-family: "Roboto", serif;
 }
-/* line 271, ../compass/sass/style.scss */
+/* line 286, ../compass/sass/style.scss */
 .main-content .main-body video {
   background: #eee;
   margin: 20px 0;
 }
-/* line 276, ../compass/sass/style.scss */
+/* line 291, ../compass/sass/style.scss */
 .main-content .gallery {
   column-count: 1;
   column-gap: 1.5em;
 }
-/* line 280, ../compass/sass/style.scss */
+/* line 295, ../compass/sass/style.scss */
 .main-content .gallery.text-3 {
   column-count: 3;
 }
-/* line 284, ../compass/sass/style.scss */
+/* line 299, ../compass/sass/style.scss */
 .main-content .gallery.text-2 {
   column-count: 2;
 }
-/* line 288, ../compass/sass/style.scss */
+/* line 303, ../compass/sass/style.scss */
 .main-content .gallery .copyright {
   color: #999;
   font-size: 0.7em;
   text-align: left;
-  margin-top: 6px;
 }
-/* line 296, ../compass/sass/style.scss */
+/* line 310, ../compass/sass/style.scss */
 .main-content .gallery-item {
   display: inline-block;
   width: 100%;
@@ -300,7 +315,7 @@ video {
   margin: 0 0 1.8em;
 }
 
-/* line 304, ../compass/sass/style.scss */
+/* line 318, ../compass/sass/style.scss */
 .download-buttons img {
   height: 40px;
 }
@@ -316,7 +331,7 @@ video {
     opacity: 1;
   }
 }
-/* line 323, ../compass/sass/style.scss */
+/* line 337, ../compass/sass/style.scss */
 .main-top, .main-body, .tabcontent {
   animation-name: fadeInUp;
   animation-duration: 1.5s;
@@ -325,7 +340,7 @@ video {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 332, ../compass/sass/style.scss */
+/* line 346, ../compass/sass/style.scss */
 .point-1 .pulse-circle,
 .point-1 .pulse-circle-2,
 .point-1 .pulse-circle-3,
@@ -334,7 +349,7 @@ video {
   left: 275px;
 }
 
-/* line 342, ../compass/sass/style.scss */
+/* line 356, ../compass/sass/style.scss */
 .point-2 .pulse-circle,
 .point-2 .pulse-circle-2,
 .point-2 .pulse-circle-3,
@@ -343,7 +358,7 @@ video {
   left: 471px;
 }
 
-/* line 352, ../compass/sass/style.scss */
+/* line 366, ../compass/sass/style.scss */
 .point-3 .pulse-circle,
 .point-3 .pulse-circle-2,
 .point-3 .pulse-circle-3,
@@ -352,7 +367,7 @@ video {
   left: 543px;
 }
 
-/* line 362, ../compass/sass/style.scss */
+/* line 376, ../compass/sass/style.scss */
 .point-4 .pulse-circle,
 .point-4 .pulse-circle-2,
 .point-4 .pulse-circle-3,
@@ -361,7 +376,7 @@ video {
   left: 202px;
 }
 
-/* line 372, ../compass/sass/style.scss */
+/* line 386, ../compass/sass/style.scss */
 .point-5 .pulse-circle,
 .point-5 .pulse-circle-2,
 .point-5 .pulse-circle-3,
@@ -370,7 +385,7 @@ video {
   left: 227px;
 }
 
-/* line 382, ../compass/sass/style.scss */
+/* line 396, ../compass/sass/style.scss */
 .point-6 .pulse-circle,
 .point-6 .pulse-circle-2,
 .point-6 .pulse-circle-3,
@@ -379,7 +394,7 @@ video {
   left: 543px;
 }
 
-/* line 392, ../compass/sass/style.scss */
+/* line 406, ../compass/sass/style.scss */
 .point-7 .pulse-circle,
 .point-7 .pulse-circle-2,
 .point-7 .pulse-circle-3,
@@ -388,7 +403,7 @@ video {
   left: 369px;
 }
 
-/* line 402, ../compass/sass/style.scss */
+/* line 416, ../compass/sass/style.scss */
 .point-8 .pulse-circle,
 .point-8 .pulse-circle-2,
 .point-8 .pulse-circle-3,
@@ -397,7 +412,7 @@ video {
   left: 202px;
 }
 
-/* line 412, ../compass/sass/style.scss */
+/* line 426, ../compass/sass/style.scss */
 .point-9 .pulse-circle,
 .point-9 .pulse-circle-2,
 .point-9 .pulse-circle-3,
@@ -406,7 +421,7 @@ video {
   left: 227px;
 }
 
-/* line 422, ../compass/sass/style.scss */
+/* line 436, ../compass/sass/style.scss */
 .point-10 .pulse-circle,
 .point-10 .pulse-circle-2,
 .point-10 .pulse-circle-3,
@@ -415,7 +430,7 @@ video {
   left: 202px;
 }
 
-/* line 432, ../compass/sass/style.scss */
+/* line 446, ../compass/sass/style.scss */
 .point-11 .pulse-circle,
 .point-11 .pulse-circle-2,
 .point-11 .pulse-circle-3,
@@ -424,7 +439,7 @@ video {
   left: 539px;
 }
 
-/* line 442, ../compass/sass/style.scss */
+/* line 456, ../compass/sass/style.scss */
 .point-12 .pulse-circle,
 .point-12 .pulse-circle-2,
 .point-12 .pulse-circle-3,
@@ -433,7 +448,7 @@ video {
   left: 317px;
 }
 
-/* line 452, ../compass/sass/style.scss */
+/* line 466, ../compass/sass/style.scss */
 .pulse-animation .pulse-circle,
 .pulse-animation .pulse-circle-2,
 .pulse-animation .pulse-circle-3,
@@ -441,22 +456,22 @@ video {
   position: absolute;
   display: block;
 }
-/* line 460, ../compass/sass/style.scss */
+/* line 474, ../compass/sass/style.scss */
 .pulse-animation .pulse-circle-2 {
   animation-delay: 0.5s;
 }
-/* line 464, ../compass/sass/style.scss */
+/* line 478, ../compass/sass/style.scss */
 .pulse-animation .pulse-circle-3 {
   animation-delay: 1s;
 }
-/* line 468, ../compass/sass/style.scss */
+/* line 482, ../compass/sass/style.scss */
 .pulse-animation .pulse-circle, .pulse-animation .pulse-circle-2, .pulse-animation .pulse-circle-3 {
   animation-name: Pulse;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   background: radial-gradient(circle, #f1c40f 0%, #f39c12 100%);
 }
-/* line 475, ../compass/sass/style.scss */
+/* line 489, ../compass/sass/style.scss */
 .pulse-animation .pulse-circle, .pulse-animation .pulse-circle-2, .pulse-animation .pulse-circle-3, .pulse-animation .point {
   background: #f1c40f;
   color: #796307;
@@ -486,12 +501,12 @@ video {
     animation-timing-function: ease-in-out;
   }
 }
-/* line 508, ../compass/sass/style.scss */
+/* line 522, ../compass/sass/style.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 512, ../compass/sass/style.scss */
+/* line 526, ../compass/sass/style.scss */
 .nav-pills {
   list-style: none;
   display: table;
@@ -499,78 +514,78 @@ video {
   width: 100%;
   margin: 0;
 }
-/* line 519, ../compass/sass/style.scss */
+/* line 533, ../compass/sass/style.scss */
 .nav-pills li {
   display: table-cell;
   text-align: center;
   padding: 35px 30px 15px;
   transition: background 0.5s ease;
 }
-/* line 525, ../compass/sass/style.scss */
+/* line 539, ../compass/sass/style.scss */
 .nav-pills li a {
   border-radius: 0px;
   color: #999;
   font-family: "Roboto", serif;
   font-weight: 500;
 }
-/* line 530, ../compass/sass/style.scss */
+/* line 544, ../compass/sass/style.scss */
 .nav-pills li a:hover, .nav-pills li a:visited, .nav-pills li a:active, .nav-pills li a:focused {
   background: #eee;
 }
-/* line 535, ../compass/sass/style.scss */
+/* line 549, ../compass/sass/style.scss */
 .nav-pills li.active {
   background: #eee;
 }
-/* line 537, ../compass/sass/style.scss */
+/* line 551, ../compass/sass/style.scss */
 .nav-pills li.active a {
   color: #222;
 }
 
-/* line 545, ../compass/sass/style.scss */
+/* line 559, ../compass/sass/style.scss */
 .intro h1 {
   font-size: 56px;
   margin-bottom: 0px;
   margin-top: 30px;
   font-weight: 100;
 }
-/* line 551, ../compass/sass/style.scss */
+/* line 565, ../compass/sass/style.scss */
 .intro h1 strong {
   font-weight: 500;
 }
-/* line 556, ../compass/sass/style.scss */
+/* line 570, ../compass/sass/style.scss */
 .intro h2 {
   font-weight: 300;
   margin-top: 0px;
   margin-bottom: 30px;
 }
-/* line 562, ../compass/sass/style.scss */
+/* line 576, ../compass/sass/style.scss */
 .intro h4 {
   font-size: 30px;
 }
 
 /* Style the tab content */
-/* line 568, ../compass/sass/style.scss */
+/* line 582, ../compass/sass/style.scss */
 .tabcontent {
   display: none;
 }
-/* line 571, ../compass/sass/style.scss */
+/* line 585, ../compass/sass/style.scss */
 .tabcontent.display-block {
   display: block;
 }
-/* line 575, ../compass/sass/style.scss */
+/* line 589, ../compass/sass/style.scss */
 .tabcontent .arrow-right {
   position: absolute;
   right: 50px;
   top: 47%;
 }
-/* line 581, ../compass/sass/style.scss */
+/* line 595, ../compass/sass/style.scss */
 .tabcontent .arrow-left {
   position: absolute;
   left: 50px;
   top: 47%;
 }
 
-/* line 588, ../compass/sass/style.scss */
+/* line 602, ../compass/sass/style.scss */
 .cover-background {
   background: url("../images/marselisborg.jpg");
   background-size: cover;
@@ -583,26 +598,26 @@ video {
   background-attachment: fixed;
   background-position: center;
 }
-/* line 600, ../compass/sass/style.scss */
+/* line 614, ../compass/sass/style.scss */
 .cover-background .main-body {
   position: relative;
   height: 100%;
   max-width: none;
   background-image: linear-gradient(0deg, rgba(51, 8, 103, 0.7) 0%, rgba(48, 207, 208, 0.7) 100%);
   margin: 0;
-  padding: 130px 100px;
+  padding: 138px 100px;
   color: #fff;
 }
-/* line 609, ../compass/sass/style.scss */
+/* line 623, ../compass/sass/style.scss */
 .cover-background .main-body p {
   font-family: "Roboto", serif;
   font-size: 20px;
 }
-/* line 614, ../compass/sass/style.scss */
+/* line 628, ../compass/sass/style.scss */
 .cover-background .main-body h3 {
   font-size: 16px;
 }
-/* line 618, ../compass/sass/style.scss */
+/* line 632, ../compass/sass/style.scss */
 .cover-background .main-body button {
   background: #f1c40f;
   font-size: 20px;
@@ -614,7 +629,7 @@ video {
   padding: 15px 20px;
 }
 
-/* line 631, ../compass/sass/style.scss */
+/* line 645, ../compass/sass/style.scss */
 #back-to-top {
   position: fixed;
   font-family: "Roboto", serif;
@@ -634,27 +649,28 @@ video {
   transition: opacity 0.2s ease-out;
   opacity: 0;
 }
-/* line 650, ../compass/sass/style.scss */
+/* line 664, ../compass/sass/style.scss */
 #back-to-top.show {
   opacity: 1;
 }
 
-/* line 655, ../compass/sass/style.scss */
+/* line 669, ../compass/sass/style.scss */
 .lb-dataContainer {
   position: fixed;
   top: 1%;
   right: 1%;
 }
 
-/* line 661, ../compass/sass/style.scss */
+/* line 675, ../compass/sass/style.scss */
 img.img-responsive {
   max-width: 100%;
   background: #FFFFFF;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
+  margin-top: 5px;
 }
 
-/* line 668, ../compass/sass/style.scss */
+/* line 683, ../compass/sass/style.scss */
 .copyright {
   color: #999;
   font-size: 0.6em;
@@ -662,19 +678,19 @@ img.img-responsive {
   font-family: "Roboto", serif;
 }
 
-/* line 675, ../compass/sass/style.scss */
+/* line 690, ../compass/sass/style.scss */
 .img-right {
   width: 40%;
   float: right;
   margin: 0px 0 20px 19px;
 }
 
-/* line 681, ../compass/sass/style.scss */
+/* line 696, ../compass/sass/style.scss */
 p {
   margin-bottom: 30px;
 }
 
-/* line 685, ../compass/sass/style.scss */
+/* line 700, ../compass/sass/style.scss */
 .fullscreen-bg {
   position: fixed;
   top: 0;
@@ -685,7 +701,7 @@ p {
   z-index: -100;
 }
 
-/* line 695, ../compass/sass/style.scss */
+/* line 710, ../compass/sass/style.scss */
 .fullscreen-bg__video {
   position: absolute;
   top: 0;
@@ -695,26 +711,26 @@ p {
 }
 
 @media (min-aspect-ratio: 16 / 9) {
-  /* line 704, ../compass/sass/style.scss */
+  /* line 719, ../compass/sass/style.scss */
   .fullscreen-bg__video {
     height: 300%;
     top: -100%;
   }
 }
 @media (max-aspect-ratio: 16 / 9) {
-  /* line 711, ../compass/sass/style.scss */
+  /* line 726, ../compass/sass/style.scss */
   .fullscreen-bg__video {
     width: 300%;
     left: -100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 718, ../compass/sass/style.scss */
+  /* line 733, ../compass/sass/style.scss */
   .fullscreen-bg {
     background: url("../img/videoframe.jpg") center center/cover no-repeat;
   }
 
-  /* line 722, ../compass/sass/style.scss */
+  /* line 737, ../compass/sass/style.scss */
   .fullscreen-bg__video {
     display: none;
   }
